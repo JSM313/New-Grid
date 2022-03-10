@@ -50,6 +50,10 @@ h6 {
   line-height: 1.3rem;
 }
 
+p {
+  margin: 0.5rem 0;
+}
+
 /* utility class */
 
 .container {
@@ -166,6 +170,16 @@ h6 {
 .bgSecondary a {
   color: #fff;
 }
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #555 dotted 1px;
+  width: 90%;
+}
+
+.list li a:hover {
+  color: var(--primary-color) !important;
+}
 /* Navbar */
 
 #mainNav {
@@ -279,7 +293,44 @@ h6 {
   align-items: center;
   grid-column: 1 / span 2;
 }
-
 #homeArticles .articlesContainer > *:last-child {
   grid-column: 2 / span 2;
+}
+
+/* Footer */
+#mainFooter {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+#mainFooter img {
+  width: 150px;
+}
+
+#mainFooter a {
+  color: #fff;
+}
+
+#mainFooter .footerContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+#mainFooter .footerContainer > *:last-child {
+  background: #444;
+  grid-column: 1 / span 4;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+#mainFooter .footerContainer input[type="email"] {
+  width: 90%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#mainFooter .footerContainer input[type="submit"] {
+  width: 90%;
 }
