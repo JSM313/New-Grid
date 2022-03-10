@@ -180,6 +180,18 @@ p {
 .list li a:hover {
   color: var(--primary-color) !important;
 }
+
+/* Inner page container */
+.pageContainer {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  margin-bottom: 2rem 0;
+  gap: 1.5rem;
+}
+
+.pageContainer > *:first-child {
+  grid-row: 1 / span 3;
+}
 /* Navbar */
 
 #mainNav {
